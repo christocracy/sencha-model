@@ -75,7 +75,7 @@ module Sencha
           memo[key.to_sym] = {
             :name => key.to_sym, 
             :type => type, 
-            :class => assn.options[:polymorphic] ? nil : assn.class_name.constantize,
+            :class => assn.options[:polymorphic] ? nil : assn.klass,
             :foreign_key => assn.association_foreign_key.to_sym,
             :is_polymorphic => !!assn.options[:polymorphic]
           }
