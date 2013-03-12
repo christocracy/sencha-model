@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sencha-model (0.5.0)
+    sencha-model (0.6.2)
 
 GEM
   remote: http://rubygems.org/
