@@ -6,13 +6,14 @@ Gem::Specification.new do |s|
   s.name        = "sencha-model"
   s.version     = Sencha::Model::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Chris Scott"]
-  s.email       = ["christocracy@gmail.com"]
+  s.authors     = ["Chris Scott, Transistor Software"]
+  s.email       = ["chrsis@transistorsoft.com"]
   s.homepage    = "http://www.transistorsoft.com"
-  s.summary     = %q{This gem auto-generates ExtJS compatible model specifications from your ORM (eg: ActiveRecord, DataMapper, MongoMapper)}
-  s.description = %q{This gem auto-generates ExtJS compatible model specifications from your ORM (eg: ActiveRecord, DataMapper, MongoMapper)}
+  s.summary     = %q{This gem allows you to define handy fieldsets within your models (eg: ActiveRecord, DataMapper, MongoMapper)}
+  s.description = %q{This gem allows you to define handy fieldsets within your models.  Eg:  User.first.to_record(:show)}
+  s.licenses    = ["MIT"]
   
-  s.add_development_dependency "minitest"#, "~> 4.0"
+  s.add_development_dependency "minitest"
   s.add_development_dependency "shoulda"
   s.add_development_dependency "shoulda-context"
   s.add_development_dependency "mocha"
