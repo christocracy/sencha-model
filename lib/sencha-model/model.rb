@@ -233,7 +233,7 @@ module Sencha
         super_value = nil
         unless self.instance_variable_get( var_name )
           if self.superclass.respond_to? :sencha_get_fields_for_fieldset
-            super_value = self.superclass.sencha_get_fields_for_fieldset(fieldset)
+            super_value = self.superclass.sencha_get_fields_for_fieldset(fieldset) if self.superclass.sencha_column_names
           end
           self.sencha_fieldset(fieldset, self.sencha_column_names) unless super_value
         end

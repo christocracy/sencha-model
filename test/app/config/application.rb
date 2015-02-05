@@ -6,6 +6,8 @@ require 'extlib/inflection'
 
 gem 'sqlite3-ruby'
 
+module Test
+end
 class Test::App
   
   attr_reader :models

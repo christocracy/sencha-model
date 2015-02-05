@@ -1,7 +1,12 @@
 require 'rubygems'
-require 'test/unit'
-require 'shoulda'
-require 'mocha'
+require 'yaml'
+require 'active_record'
+require 'bundler'
+Bundler.require
+
+require 'minitest/autorun'
+require 'minitest/autorun'
+require 'shoulda/context'
 
 begin
   require 'ruby-debug'
@@ -27,6 +32,6 @@ App = Test::App.new(:active_record)
 #FIXTURES_DIR  = File.join(File.dirname(__FILE__), "fixtures") 
 
 
-class Test::Unit::TestCase
+class Minitest::Test
 end
 

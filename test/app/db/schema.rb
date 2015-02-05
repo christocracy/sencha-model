@@ -5,7 +5,7 @@
 # people
 #
 ActiveRecord::Base.connection.create_table :users, :force => true do |table|
-  table.column :id, :serial
+  #table.column :id, :serial
   table.column :person_id, :integer
   table.column :password, :string
   table.column :created_at, :date
@@ -15,7 +15,7 @@ end
 # people
 #
 ActiveRecord::Base.connection.create_table :people, :force => true do |table|
-  table.column :id, :serial
+  #table.column :id, :serial
   table.column :first, :string, :null => false
   table.column :last, :string, :null => false
   table.column :email, :string, :null => false
@@ -32,7 +32,7 @@ end
 # groups
 #
 ActiveRecord::Base.connection.create_table :groups, :force => true do |table|
-  table.column :id, :serial
+  #table.column :id, :serial
   table.column :title, :string
 end
 
@@ -40,7 +40,7 @@ end
 # locations
 #
 ActiveRecord::Base.connection.create_table :locations, :force => true do |table|
-  table.column :id, :serial
+  #table.column :id, :serial
   table.column :name, :string
   table.column :street, :string
   table.column :type, :string
@@ -50,7 +50,7 @@ end
 # addresses
 #
 ActiveRecord::Base.connection.create_table :addresses, :force => true do |table|
-  table.column :id, :serial
+  #table.column :id, :serial
   table.column :addressable_type, :string
   table.column :addressable_id, :integer
   table.column :street, :string
@@ -60,7 +60,7 @@ end
 # Mock a Model for testing data-types
 #
 ActiveRecord::Base.connection.create_table :data_types, :force => true do |table|
-  table.column :id, :serial
+  #table.column :id, :serial
   table.column :string_column, :string
   table.column :decimal_column, :decimal
   table.column :float_column, :float

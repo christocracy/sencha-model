@@ -62,7 +62,7 @@ end
 class BogusModelChild < BogusModel
 end
 
-class ModelTest < Test::Unit::TestCase
+class ModelTest < Minitest::Test
   context "Rendering DataReader configuration for Person and User" do
 
 	  setup do

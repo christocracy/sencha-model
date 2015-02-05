@@ -9,7 +9,11 @@ module Sencha
       end
       
       def sencha_column_names
-        self.column_names.map(&:to_sym)
+        begin
+          self.column_names.map(&:to_sym)
+        rescue
+          nil
+        end
       end
       
       def sencha_columns_hash

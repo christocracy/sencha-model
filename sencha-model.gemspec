@@ -12,10 +12,12 @@ Gem::Specification.new do |s|
   s.summary     = %q{This gem auto-generates ExtJS compatible model specifications from your ORM (eg: ActiveRecord, DataMapper, MongoMapper)}
   s.description = %q{This gem auto-generates ExtJS compatible model specifications from your ORM (eg: ActiveRecord, DataMapper, MongoMapper)}
   
+  s.add_development_dependency "minitest"#, "~> 4.0"
   s.add_development_dependency "shoulda"
+  s.add_development_dependency "shoulda-context"
   s.add_development_dependency "mocha"
   s.add_development_dependency "extlib"
-  s.add_development_dependency "activerecord", ">= 3.0.0"
+  s.add_development_dependency "activerecord", ">= 4.0.0"
   s.add_development_dependency "sqlite3-ruby"
   
   s.files         = `git ls-files`.split("\n")
