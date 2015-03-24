@@ -235,7 +235,13 @@ module Sencha
           if self.superclass.respond_to? :sencha_get_fields_for_fieldset
             super_value = self.superclass.sencha_get_fields_for_fieldset(fieldset) if self.superclass.sencha_column_names
           end
-          self.sencha_fieldset(fieldset, self.sencha_column_names) unless super_value
+          unless super_value
+            if self.instance_variable_get(:"@sencha_fieldsets__default")
+              var_name = :"@sencha_fieldsets__default"
+            else
+              self.sencha_fieldset(fieldset, self.sencha_column_names) unless super_value
+            end
+          end
         end
         super_value || self.instance_variable_get( var_name )
       end
