@@ -1,5 +1,5 @@
 ##
-# DataMapper adapter for Whorm::Model mixin
+# DataMapper adapter for Sencha::Model mixin
 #
 
 module Sencha

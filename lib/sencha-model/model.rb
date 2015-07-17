@@ -39,7 +39,7 @@ module Sencha
       #                             # returns record for the fields 'id' and 'password'
       # 
       # For even more valid options for this method (which all should not be neccessary to use)
-      # have a look at Whorm::Model::Util.extract_fieldset_and_options
+      # have a look at Sencha::Model::Util.extract_fieldset_and_options
       def to_record(*params)
         fieldset, options = Util.extract_fieldset_and_options params
         
@@ -129,7 +129,7 @@ module Sencha
       #                                # returns record config for the fields 'id' and 'password'
       # 
       # For even more valid options for this method (which all should not be neccessary to use)
-      # have a look at Whorm::Model::Util.extract_fieldset_and_options
+      # have a look at Sencha::Model::Util.extract_fieldset_and_options
       def sencha_schema(*params)
         fieldset, options = Util.extract_fieldset_and_options params
         

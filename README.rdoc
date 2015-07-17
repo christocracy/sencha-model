@@ -86,7 +86,7 @@ or
     User.first.to_record(:combo)
 
 === A Testing Mixin:  Sencha::TestMacros
-The <tt>sencha</tt> Gem includes a small set of testing macros to help unit-test models.
+The <tt>sencha-model</tt> Gem includes a small set of testing macros to help unit-test models.
 Using this macro requires the 'Shoulda' gem from thoughtbot
 
 ==== Usage

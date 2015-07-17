@@ -1,5 +1,5 @@
 ##
-# ActiveRecord adapter to Whorm::Model mixin.
+# ActiveRecord adapter to Sencha::Model mixin.
 #
 module Sencha
   module Model
